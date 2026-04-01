@@ -134,10 +134,10 @@ export function Navbar() {
               <Link
                 key={link.href}
                 to={link.href}
-                className={`relative text-sm font-medium transition-colors duration-200 py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-primary after:rounded-full after:transition-all after:duration-300 ${
+              className={`relative text-sm font-medium transition-colors duration-200 py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:transition-all after:duration-300 ${
                   isActive
-                    ? "text-foreground after:w-full"
-                    : "text-muted-foreground hover:text-foreground after:w-0 hover:after:w-full"
+                    ? "text-[#2563eb] after:w-0"
+                    : "text-muted-foreground hover:text-[#2563eb] after:w-0 hover:after:w-full after:bg-[#2563eb]"
                 }`}
               >
                 {link.label}
